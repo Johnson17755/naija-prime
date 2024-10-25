@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:wght@100..900&family=Manrope:wght@200..800&family=Markazi+Text:wght@400..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ::-webkit-scrollbar { */
+/* width: 0px; */
+/* background: transparent; make scrollbar transparent */
+/* } */
+
+.PrimeColor {
+  color: #11ee4254;
+}
+
+.textColor {
+  color: #0bf931;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 0.25rem 1.6rem 0.25rem 1rem;
+  cursor: pointer;
+}
+
+.selectDay {
+  background-color: #3516f3;
+  color: white;
+}
+
+.selectDay option {
+  background-color: #3516f3;
+  color: white;
+}
+
+.selectMonth {
+  background-color: #ffffff;
+  color: black;
+}
+
+.selectMonth option {
+  background-color: #ffffff;
+  color: black;
+}
+
+.selectMonthTwo {
+  background-color: #0bf93169;
+  color: #000000;
+}
+
+.selectMonthTwo option {
+  background-color: #0bf93169;
+  color: black;
+}
+
+.active-tab {
+  background-color: #9999998a;
+}
+
+.backdrop {
+  position: fixed;
+  top: 5%;
+  left: 10%;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  height: 500px;
+  width: 1000px;
+  padding: 2rem;
+  text-align: center;
+  z-index: 1001;
+}
+
+.scheduleModal {
+  background: white;
+  height: 500px;
+  width: 1000px;
+  padding: 2rem;
+  border-radius: 5px;
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5));
+  text-align: center;
+  z-index: 1001;
+}
+
+textarea {
+  resize: none;
+}
+
+.scroll-container {
+  height: 370px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #0bf931 transparent;
+}
+
+.todo-task-scrollbar {
+  height: 164px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #0bf931 transparent;
+}
+
+.activeOngoing-task-scrollbar {
+  height: 164px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #0bf931 transparent;
+}
+
+.interviews-scrollbar {
+  height: 545px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #0bf931 transparent;
+}
+
+.activeReviews-scrollbar {
+  height: 240px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #0bf931 transparent;
+}
+
+.scheduleTable-scrollbar {
+  height: 410px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #0bf931 transparent;
+}
+
+.announcement-scrollbar {
+  height: 360px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #0bf931 transparent;
+}
+
+.scroll-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  /* background-color: #aaa; */
+  border-radius: 8px;
+}
+
+.hr-scroll-container {
+  overflow-y: auto;
+}
+
+input[type="checkbox"]:checked {
+  border: none;
+}
+input[type="checkbox"]:focus {
+  outline: none;
+  border: none;
+}
+
+.cardCon-scroll-container {
+  height: 300px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #0bf931 transparent;
+}
+
+/*Styles for FullCalendar */
+.fc .fc-toolbar-title {
+  font-size: 1.5rem;
+  color: #f5b5aa;
+  font-weight: bold;
+}
+
+.fc-daygrid-day-number {
+  font-weight: 600;
+}
+
+.fc-col-header-cell {
+  background-color: #f5b5aa;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+  background-color: #f5b5aa;
+}
